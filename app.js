@@ -9,5 +9,38 @@ const lightbox=$('#lightbox'),lightboxImage=$('#lightboxImage');function showPho
 $('#collabForm').addEventListener('submit',e=>{e.preventDefault();const d=new FormData(e.target);const subject=encodeURIComponent(`[Collaboration] ${d.get('type')} — ${d.get('name')}`);const body=encodeURIComponent(`Bonjour Mah Andry - KLS Ofisialy,\n\nNom : ${d.get('name')}\nType : ${d.get('type')}\n\nMessage :\n${d.get('message')}\n\nMerci.`);window.location.href=`mailto:herymahandry04@gmail.com?subject=${subject}&body=${body}`;});
 const ACCESS='2104055042121';const uploadModal=$('#uploadModal');$('#openUpload').addEventListener('click',()=>{ $('#uploadNote').textContent='';openModal('#uploadModal');});
 function getSaved(){try{return JSON.parse(localStorage.getItem('mahAndryPhotos')||'[]')}catch{return[]}}function saveSaved(items){localStorage.setItem('mahAndryPhotos',JSON.stringify(items))}
-function renderUserPhotos(){const box=$('#userGallery');box.innerHTML='';getSaved().forEach((p,i)=>{const b=document.createElement('button');b.className='photo-card';b.innerHTML=`<img src="${p.src}" alt="${p.caption||'Photo ajoutée'}"><span>${p.caption||'Photo personnelle'} ↗</span>`;b.addEventListener('click',()=>showPhoto(p.src));box.appendChild(b);});}renderUserPhotos();
+function renderUserPhotos(){
+  const box=$('#userGallery');
+  box.innerHTML='';
+  getSaved().forEach((p,i)=>{
+    const card=document.createElement('div');
+    card.className='photo-card user-photo-card';
+    const imageButton=document.createElement('button');
+    imageButton.className='photo-open';
+    imageButton.type='button';
+    const img=document.createElement('img');
+    img.src=p.src;
+    img.alt=p.caption||'Photo ajoutée';
+    img.loading='lazy';
+    const caption=document.createElement('span');
+    caption.textContent=(p.caption||'Photo personnelle')+' ↗';
+    imageButton.append(img,caption);
+    imageButton.addEventListener('click',()=>showPhoto(p.src));
+    const del=document.createElement('button');
+    del.type='button';
+    del.className='delete-photo';
+    del.textContent='Supprimer';
+    del.setAttribute('aria-label','Supprimer cette photo');
+    del.addEventListener('click',()=>{
+      if(!confirm('Supprimer définitivement cette photo de ce navigateur ?')) return;
+      const items=getSaved();
+      items.splice(i,1);
+      saveSaved(items);
+      renderUserPhotos();
+    });
+    card.append(imageButton,del);
+    box.appendChild(card);
+  });
+}
+renderUserPhotos();
 $('#uploadForm').addEventListener('submit',e=>{e.preventDefault();const code=$('#accessCode').value.trim(),file=$('#photoFile').files[0],note=$('#uploadNote');if(code!==ACCESS){note.textContent='Code incorrect. Veuillez réessayer.';return}if(!file||!file.type.startsWith('image/')){note.textContent='Veuillez choisir une image valide.';return}if(file.size>5*1024*1024){note.textContent='Image trop lourde : maximum 5 Mo.';return}const reader=new FileReader();reader.onload=()=>{const items=getSaved();items.unshift({src:reader.result,caption:$('#photoCaption').value.trim(),createdAt:Date.now()});try{saveSaved(items);renderUserPhotos();closeModal(uploadModal);e.target.reset()}catch{note.textContent='Stockage insuffisant dans ce navigateur.';}};reader.readAsDataURL(file);});
