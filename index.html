@@ -3,188 +3,59 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#0b1020" />
-  <meta name="description" content="Mah Andry - KLS Ofisialy — Influancier, artiste et humoriste malagasy." />
+  <meta name="theme-color" content="#070b17" />
+  <meta name="description" content="Mah Andry - KLS Ofisialy — profil officiel, humoriste, influancier et artiste malagasy." />
   <title>Mah Andry - KLS Ofisialy</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="ambient ambient-one"></div>
-  <div class="ambient ambient-two"></div>
-
-  <header class="topbar" id="top">
-    <a class="brand" href="#top" aria-label="Accueil Mah Andry">
-      <span class="brand-mark">KLS</span>
-      <span>
-        <strong>Mah Andry</strong>
-        <small>Ofisialy</small>
-      </span>
-    </a>
-
-    <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-
-    <nav class="nav" id="mainNav">
-      <a href="#about">À propos</a>
-      <a href="#gallery">Photos</a>
-      <a href="#activities">Activités</a>
-      <a href="#contact">Contact</a>
-      <a class="nav-cta" href="https://www.facebook.com/profile.php?id=61594634241082" target="_blank" rel="noopener">Facebook ↗</a>
+  <div class="noise"></div><div class="orb orb-a"></div><div class="orb orb-b"></div>
+  <header class="topbar">
+    <a class="brand" href="#home"><span class="brand-symbol">KLS</span><span><b>Mah Andry</b><small>OFISIALY</small></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    <nav id="mainNav">
+      <a href="#home">Accueil</a><a href="#presentation">Présentation</a><a href="#photos">Photos</a><a href="#activities">Activités</a><a href="#contact">Contact</a>
+      <a class="nav-button" href="https://www.facebook.com/profile.php?id=61594634241082" target="_blank" rel="noopener">Facebook ↗</a>
     </nav>
   </header>
 
   <main>
-    <section class="hero section">
+    <section class="hero section" id="home">
       <div class="hero-copy reveal">
-        <div class="eyebrow"><span class="pulse"></span> Profil officiel • Madagascar</div>
-        <h1>Mah Andry<br><span>KLS Ofisialy</span></h1>
-        <p class="hero-lead">
-          Influancier, artiste et humoriste malagasy. Un univers authentique,
-          énergique et créatif, entre humour, musique et contenu digital.
-        </p>
-
-        <div class="hero-actions">
-          <a class="button primary" href="#contact">Me contacter <span>↗</span></a>
-          <a class="button secondary" href="#gallery">Découvrir le profil</a>
-        </div>
-
-        <div class="quick-facts">
-          <div><strong>Influancier</strong><span>Créateur de contenu</span></div>
-          <div><strong>Artiste</strong><span>Humour & musique</span></div>
-          <div><strong>Madagascar</strong><span>Ambohimanambola</span></div>
-        </div>
+        <div class="status"><i></i> Profil officiel · Madagascar</div>
+        <p class="kicker">INFLUANCIER • ARTISTE • HUMORISTE</p>
+        <h1>Mah Andry <span>- KLS Ofisialy</span></h1>
+        <p class="hero-text">Bienvenue dans l’univers de <strong>Mah Andry - KLS Ofisialy</strong> : humour, créativité, lifestyle et expression artistique malagasy. Un profil construit autour de la bonne humeur, de l’authenticité et du partage.</p>
+        <div class="actions"><a class="btn primary" href="#presentation">Découvrir le profil <span>↗</span></a><a class="btn ghost" href="#contact">Proposer une collaboration</a></div>
+        <div class="hero-metrics"><div><b>Humour</b><small>Divertissement</small></div><div><b>Artiste</b><small>Créativité</small></div><div><b>KLS</b><small>Identité officielle</small></div></div>
       </div>
+      <div class="hero-visual reveal"><div class="halo"></div><div class="portrait-frame"><img src="assets/profile-logo.png" alt="Identité visuelle Mah Andry KLS Ofisialy"><span>✦ OFFICIAL CREATOR</span></div><div class="floating-card card-one">🎭<b>Humour</b><small>Faire sourire</small></div><div class="floating-card card-two">🎵<b>Art & musique</b><small>Créer et partager</small></div></div>
+    </section>
 
-      <div class="hero-visual reveal">
-        <div class="hero-ring"></div>
-        <div class="hero-card">
-          <img src="assets/profile-logo.png" alt="Portrait et identité visuelle de Mah Andry - KLS Ofisialy">
-          <div class="hero-badge">✦ OFFICIAL PROFILE</div>
-        </div>
-        <div class="floating-note note-top">Humour<br><b>Créativité</b></div>
-        <div class="floating-note note-bottom">KLS<br><b>Family</b></div>
+    <section class="trust-strip section reveal"><div><b>Nom public</b><span>@ Mah Andry</span></div><div><b>Localisation</b><span>Ambohimanambola · 103</span></div><div><b>Statut</b><span class="open"><i></i> Toujours ouvert</span></div><div><b>Évaluation</b><span>☆ Pas encore évalué (0 avis)</span></div></section>
+
+    <section class="section" id="presentation">
+      <div class="section-head reveal"><span class="eyebrow">01 / PRÉSENTATION</span><h2>Plus qu’un profil : une <em>identité</em> créative.</h2><p>Découvrez les informations, les centres d’expression et l’univers public de Mah Andry - KLS Ofisialy.</p></div>
+      <div class="presentation-grid">
+        <article class="panel about-panel reveal"><div class="panel-label">À PROPOS</div><h3>Qui est Mah Andry ?</h3><p><strong>Mah Andry - KLS Ofisialy</strong> est un influancier, artiste et humoriste malagasy. Il se distingue par une approche accessible, des contenus amusants et une personnalité tournée vers le divertissement.</p><p>Son univers associe les moments du quotidien, les photos lifestyle, l’humour, la créativité et les échanges avec son public. Le profil KLS Ofisialy représente une présence personnelle et artistique à développer à travers des contenus, des collaborations et des projets.</p><div class="chips"><span>Humour</span><span>Comédie</span><span>Artiste</span><span>Lifestyle</span><span>Créateur digital</span></div></article>
+        <article class="panel reveal"><div class="panel-label">INFORMATIONS</div><h3>Fiche du profil</h3><dl class="details"><div><dt>Nom</dt><dd>Mah Andry - KLS Ofisialy</dd></div><div><dt>Genre</dt><dd>Influancier / Artiste</dd></div><div><dt>Spécialité</dt><dd>Humour, comédie et divertissement</dd></div><div><dt>Situation</dt><dd>💕 C’est compliqué</dd></div><div><dt>Adresse</dt><dd>Ambohimanambola, Antananarivo, Madagascar</dd></div><div><dt>Code postal</dt><dd>103</dd></div><div><dt>Autre lieu</dt><dd>Antsirabe</dd></div><div><dt>Disponibilité</dt><dd class="available">● Toujours ouvert</dd></div></dl></article>
       </div>
     </section>
 
-    <section class="stats section reveal" aria-label="Présentation rapide">
-      <div class="stat-card"><span class="stat-icon">✦</span><strong>Artiste</strong><p>Une identité artistique originale</p></div>
-      <div class="stat-card"><span class="stat-icon">☺</span><strong>Humoriste</strong><p>Faire sourire et divertir</p></div>
-      <div class="stat-card"><span class="stat-icon">◉</span><strong>Digital</strong><p>Présence et contenu en ligne</p></div>
-      <div class="stat-card"><span class="stat-icon">⌂</span><strong>Antananarivo</strong><p>Ambohimanambola, Madagascar</p></div>
-    </section>
+    <section class="section" id="activities"><div class="section-head reveal"><span class="eyebrow">02 / UNIVERS</span><h2>Les domaines qui font vivre son <em>contenu.</em></h2><p>Une présentation claire des activités et possibilités autour de l’identité Mah Andry.</p></div><div class="activity-grid"><article class="activity reveal"><span>01</span><h3>Humour & comédie</h3><p>Sketchs, scènes du quotidien, expressions comiques et contenus conçus pour faire rire.</p><b>Divertir le public ↗</b></article><article class="activity reveal"><span>02</span><h3>Création de contenu</h3><p>Photos, vidéos, publications et formats courts pour partager un univers authentique.</p><b>Créer une communauté ↗</b></article><article class="activity reveal"><span>03</span><h3>Art & expression</h3><p>Identité visuelle, musique, créativité personnelle et projets artistiques à développer.</p><b>Exprimer sa passion ↗</b></article><article class="activity reveal"><span>04</span><h3>Collaborations</h3><p>Ouverture aux projets avec artistes, créateurs, marques, événements et partenaires.</p><b>Construire ensemble ↗</b></article></div></section>
 
-    <section class="split-section section" id="about">
-      <div class="section-heading reveal">
-        <div class="eyebrow">01 • Identité</div>
-        <h2>Une personnalité qui mélange <em>humour</em>, passion et créativité.</h2>
-      </div>
+    <section class="section" id="photos"><div class="section-head reveal"><span class="eyebrow">03 / GALERIE</span><h2>Quelques instants de <em>Mah Andry.</em></h2><p>Photos de profil, lifestyle et identité visuelle. Touchez une image pour l’ouvrir en grand.</p></div><div class="gallery"><button class="photo photo-main reveal" data-lightbox="assets/mah-andry-orange.jpg"><img src="assets/mah-andry-orange.jpg" alt="Mah Andry avec un t-shirt orange"><span>01 · Lifestyle</span></button><button class="photo reveal" data-lightbox="assets/mah-andry-black.jpg"><img src="assets/mah-andry-black.jpg" alt="Mah Andry en tenue noire"><span>02 · Style KLS</span></button><button class="photo reveal" data-lightbox="assets/mah-andry-nature.jpg"><img src="assets/mah-andry-nature.jpg" alt="Mah Andry dans la nature"><span>03 · Nature</span></button><button class="photo reveal" data-lightbox="assets/profile-logo.png"><img src="assets/profile-logo.png" alt="Logo et présentation Mah Andry KLS"><span>04 · Identité officielle</span></button></div></section>
 
-      <div class="about-grid">
-        <div class="glass-panel reveal">
-          <h3>À propos de Mah Andry</h3>
-          <p>
-            Mah Andry - KLS Ofisialy est un créateur malagasy positionné comme
-            <b>influancier, artiste et humoriste</b>. Son contenu met en avant
-            la bonne humeur, la proximité avec le public et une expression
-            personnelle reconnaissable.
-          </p>
-          <p>
-            À travers les photos, les vidéos, l’humour et les projets artistiques,
-            il développe un univers dynamique sous l’identité KLS Ofisialy.
-          </p>
-          <div class="tag-row">
-            <span>Humour</span><span>Artiste</span><span>Créateur</span><span>KLS</span>
-          </div>
-        </div>
+    <section class="section profile-info"><div class="section-head reveal"><span class="eyebrow">04 / INFOS PUBLIQUES</span><h2>Retrouvez les <em>coordonnées</em> officielles.</h2></div><div class="info-cards"><a class="info-card reveal" href="https://www.facebook.com/profile.php?id=61594634241082" target="_blank" rel="noopener"><span class="info-icon">f</span><small>Réseau social</small><b>Facebook officiel</b><em>Ouvrir le profil ↗</em></a><a class="info-card reveal" href="tel:+261383955105"><span class="info-icon">☎</span><small>Téléphone</small><b>+261 38 39 551 05</b><em>Appeler maintenant ↗</em></a><a class="info-card reveal" href="mailto:herymahandry04@gmail.com"><span class="info-icon">✉</span><small>E-mail professionnel</small><b>herymahandry04@gmail.com</b><em>Envoyer un message ↗</em></a><div class="info-card reveal"><span class="info-icon">⌂</span><small>Localisation</small><b>Ambohimanambola, Antananarivo</b><em>Madagascar · 103</em></div></div></section>
 
-        <div class="info-panel reveal">
-          <div class="info-line"><span>Nom</span><strong>Mah Andry - KLS Ofisialy</strong></div>
-          <div class="info-line"><span>Genre</span><strong>Influancier / Artiste</strong></div>
-          <div class="info-line"><span>Spécialité</span><strong>Humour & divertissement</strong></div>
-          <div class="info-line"><span>Situation</span><strong>C’est compliqué</strong></div>
-          <div class="info-line"><span>Évaluation</span><strong>☆ Pas encore évalué (0 avis)</strong></div>
-          <div class="info-line"><span>Disponibilité</span><strong><span class="green-dot"></span> Toujours ouvert</strong></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="gallery">
-      <div class="section-heading reveal">
-        <div class="eyebrow">02 • Galerie</div>
-        <h2>Des images, une présence, une <em>signature visuelle.</em></h2>
-        <p>Une sélection de photos de Mah Andry dans différents styles et ambiances.</p>
-      </div>
-
-      <div class="gallery-grid">
-        <button class="photo-card large reveal" data-lightbox="assets/mah-andry-orange.jpg" aria-label="Voir la photo en grand">
-          <img src="assets/mah-andry-orange.jpg" alt="Mah Andry avec un t-shirt orange">
-          <span class="photo-caption">Authentique <small>01</small></span>
-        </button>
-        <button class="photo-card reveal" data-lightbox="assets/mah-andry-black.jpg" aria-label="Voir la photo en grand">
-          <img src="assets/mah-andry-black.jpg" alt="Mah Andry avec un style noir et casquette">
-          <span class="photo-caption">Style KLS <small>02</small></span>
-        </button>
-        <button class="photo-card reveal" data-lightbox="assets/mah-andry-nature.jpg" aria-label="Voir la photo en grand">
-          <img src="assets/mah-andry-nature.jpg" alt="Mah Andry dans un environnement naturel">
-          <span class="photo-caption">Lifestyle <small>03</small></span>
-        </button>
-      </div>
-      <p class="gallery-hint">Cliquez sur une photo pour l’agrandir.</p>
-    </section>
-
-    <section class="section" id="activities">
-      <div class="section-heading reveal">
-        <div class="eyebrow">03 • Activités</div>
-        <h2>Un profil pensé pour <em>divertir</em> et créer du lien.</h2>
-      </div>
-
-      <div class="activity-grid">
-        <article class="activity-card reveal"><span>01</span><h3>Humour & comédie</h3><p>Sketchs, contenus amusants et moments destinés à faire rire le public.</p></article>
-        <article class="activity-card reveal"><span>02</span><h3>Art & musique</h3><p>Expression artistique, identité visuelle et projets créatifs personnels.</p></article>
-        <article class="activity-card reveal"><span>03</span><h3>Création digitale</h3><p>Photos, vidéos et publications pour développer une communauté active.</p></article>
-        <article class="activity-card reveal"><span>04</span><h3>Collaborations</h3><p>Ouverture aux projets avec artistes, créateurs, marques et événements.</p></article>
-      </div>
-    </section>
-
-    <section class="section contact-section" id="contact">
-      <div class="contact-card reveal">
-        <div class="contact-copy">
-          <div class="eyebrow">04 • Coordonnées</div>
-          <h2>Un projet ? Une collaboration ?<br><em>Parlons-en.</em></h2>
-          <p>Pour une collaboration artistique, une prestation, une invitation ou une demande professionnelle, utilisez les coordonnées officielles ci-dessous.</p>
-          <div class="contact-buttons">
-            <a class="button primary" href="tel:+261383955105">Appeler</a>
-            <a class="button secondary" href="mailto:herymahandry04@gmail.com">Envoyer un e-mail</a>
-          </div>
-        </div>
-
-        <div class="contact-details">
-          <div class="contact-item"><span>⌂</span><div><small>Adresse principale</small><strong>Ambohimanambola, Antananarivo, Madagascar, 103</strong></div></div>
-          <div class="contact-item"><span>⌂</span><div><small>Autre lieu</small><strong>Antsirabe</strong></div></div>
-          <div class="contact-item"><span>☎</span><div><small>Téléphone</small><a href="tel:+261383955105">+261 38 39 551 05</a></div></div>
-          <div class="contact-item"><span>✉</span><div><small>E-mail</small><a href="mailto:herymahandry04@gmail.com">herymahandry04@gmail.com</a></div></div>
-          <div class="contact-item"><span>◎</span><div><small>Nom public</small><strong>@ Mah Andry</strong></div></div>
-          <div class="contact-item"><span>f</span><div><small>Facebook officiel</small><a href="https://www.facebook.com/profile.php?id=61594634241082" target="_blank" rel="noopener">Ouvrir le profil Facebook ↗</a></div></div>
-        </div>
-      </div>
-    </section>
+    <section class="section contact" id="contact"><div class="contact-box reveal"><div><span class="eyebrow">05 / CONTACT</span><h2>Un projet, une idée ou une <em>collaboration ?</em></h2><p>Pour une invitation, une collaboration artistique, une prestation, un partenariat ou une demande d’information, utilisez les boutons ci-dessous.</p><div class="actions"><a class="btn primary" href="mailto:herymahandry04@gmail.com?subject=Collaboration%20Mah%20Andry">Écrire un e-mail ↗</a><a class="btn ghost" href="https://www.facebook.com/profile.php?id=61594634241082" target="_blank" rel="noopener">Message Facebook</a></div></div><div class="contact-side"><div><small>Nom public</small><b>@ Mah Andry</b></div><div><small>Signature</small><b>Mah Andry - KLS Ofisialy</b></div><div><small>Positionnement</small><b>Influancier · Artiste · Humoriste</b></div></div></div></section>
   </main>
 
-  <footer class="footer">
-    <div><strong>Mah Andry - KLS Ofisialy</strong><span>Influancier • Artiste • Humoriste</span></div>
-    <a href="#top">Retour en haut ↑</a>
-    <p>© <span id="year"></span> KLS Ofisialy. Tous droits réservés.</p>
-  </footer>
-
-  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Aperçu de la photo">
-    <button class="lightbox-close" id="lightboxClose" aria-label="Fermer">×</button>
-    <img id="lightboxImage" src="" alt="">
-  </div>
-
+  <footer><div><a class="brand" href="#home"><span class="brand-symbol">KLS</span><span><b>Mah Andry</b><small>OFISIALY</small></span></a><p>Humour, art, créativité et bonne humeur malagasy.</p></div><div class="footer-links"><a href="#presentation">Présentation</a><a href="#photos">Photos</a><a href="#contact">Contact</a><a href="https://www.facebook.com/profile.php?id=61594634241082" target="_blank" rel="noopener">Facebook ↗</a></div><small class="copyright">© <span id="year"></span> Mah Andry - KLS Ofisialy. Tous droits réservés.</small></footer>
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo agrandie"><button id="lightboxClose" aria-label="Fermer">×</button><img id="lightboxImage" alt=""></div>
   <script src="app.js"></script>
 </body>
 </html>
